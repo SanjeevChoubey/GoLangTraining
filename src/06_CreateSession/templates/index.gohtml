@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create Session</title>
+</head>
+
+<body>
+<form method = "POST" >
+<input type = "text" id = "username"  placeholder = " User name"><br>
+<input type = "text" id = "firstname" placeholder = "First name"><br>
+<input type = "text" id = "lastname"  placeholder = "Last name"><br>
+<br>
+<input type = "submit">
+</form>
+
+{{if .First}}
+    User Name {{.UserName}}<br>
+    First name {{.First}}<br>
+    Last name {{.Last}}<br>
+
+{{end}}
+
+<h1> Next page<a href = "/bar"> The Bar </a> </h1>
+
+
+</body>
+
+</html>
