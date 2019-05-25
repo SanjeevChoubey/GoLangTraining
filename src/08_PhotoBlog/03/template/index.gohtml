@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> User data</title>
+    </head>
+
+
+    <body>
+        <h1> Pictures</h1>
+            {{range .}}
+
+            <img src = "/public/pics/{{.}}" width = "400px">
+
+            {{end}}
+
+        <form method = "post" enctype = "multipart/form-data">
+            <input type ="file" name ="myfile">
+            <input type = "submit" name ="submit">
+        <form>
+    </body>
+
+
+</html>
